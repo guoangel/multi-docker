@@ -18,7 +18,7 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - docker push fsguoangeldocker/multi-client
-  - docker push fsguoangeldocker/multi-nginx
-  - docker push fsguoangeldocker/multi-server
-  - docker push fsguoangeldocker/multi-worker
+  - docker push fsguoangeldocker/multi-client:tagname
+  - docker push fsguoangeldocker/multi-nginx:tagname
+  - docker push fsguoangeldocker/multi-server:tagname
+  - docker push fsguoangeldocker/multi-worker:tagname
